@@ -1,0 +1,15 @@
+while 1 :
+    number = input("enter a positive number.")
+    dig= len(number)
+    sum = 0
+    if not number.isdigit() :
+      print(number, "It is an invalid entry. Don't use non-numeric, float, or negative values!")
+    elif int(number) >= 0 :
+      for i in range(dig) :
+            sum += int(number[i]) ** dig
+      if sum == int(number) :
+            print(number, "is an Armstrong Number.")
+            break
+      else :
+            print(number, "is not an Armstrong Number.")
+            break
